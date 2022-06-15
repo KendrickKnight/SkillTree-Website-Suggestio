@@ -148,7 +148,7 @@ header {
 }
 
 .header-buttons button:nth-child(1) {
-  background-color: darkblue;
+  background-color: #738adb;
 }
 
 .header-buttons button:nth-child(1) a {
