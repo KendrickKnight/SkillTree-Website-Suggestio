@@ -262,11 +262,11 @@ header {
 .vision {
   position: relative;
   width: 100%;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
 }
 
 .vision h2 {
@@ -718,11 +718,19 @@ footer {
     font-size: 1.5rem;
   }
 
+  .skilltree-contributor h2 {
+    font-size: 2rem;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
   h2 {
     font-size: 1.9rem;
+  }
+
+  .skilltree-contributor h2 {
+    font-size: 1.75rem;
   }
 
   .header-subtitle-gy {
