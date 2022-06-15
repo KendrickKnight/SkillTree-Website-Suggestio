@@ -1,0 +1,744 @@
+/*Color pallete
+    #FEDC222 - Light yellow
+    #FFCE00  - Yellow
+    #FFBA00  - Darker yellow
+    #610DA9  - Purple
+    #2D0352  - Dark purple
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('../Images/Background/Logo_Background.png');
+}
+
+/* Common styles */
+/* Lets have a discussion on these later */
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #ffab00;
+  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
+  margin: 0 1rem;
+}
+
+/*  Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  padding:0 1rem ;
+}
+
+.header-logo-container {
+  color: #ffab00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 1rem 4rem;
+}
+
+.header-logo-container img {
+
+  width: 21.5rem;
+}
+
+.header-logo-container p {
+  font-size: 2rem;
+  word-spacing: -1.4rem;
+  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
+}
+
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+.header-title {
+  color: #ffab00;
+}
+
+.header-title p {
+  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
+  text-shadow: black 0 .4rem;
+}
+
+.header-title span {
+  color: white;
+
+}
+
+.header-subtitle-gy {
+  
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+
+.header-subtitle-si {
+  font-size:2rem;
+  
+}
+
+.header-buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: .3rem;
+}
+
+.header-buttons button {
+  width: 45%;
+  font-size: 1rem;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.header-buttons button:nth-child(1) {
+  background-color: darkblue;
+}
+
+.header-buttons button:nth-child(1) a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-buttons button:nth-child(2) {
+  color: white;
+  background-color: gray;
+}
+
+.header-social-media ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.header-social-media ul li {
+  margin: 0 .75rem;
+}
+
+.header-social-media ul li a img{
+  transition: .25s;
+  width: 3rem;
+}
+
+#Discord:hover {
+  transform: scale(1.2);
+  filter: 
+  invert(65%) 
+  sepia(16%) 
+  saturate(6727%) 
+  hue-rotate(199deg) 
+  brightness(89%) 
+  contrast(91%)
+  ;
+
+}
+
+#Github:hover {
+  transform: scale(1.2);
+  filter: 
+  invert(90%) 
+  sepia(92%) 
+  saturate(2500%) 
+  hue-rotate(175deg) 
+  brightness(200%) 
+  contrast(102%);
+}
+
+#Twitter:hover {
+  transform: scale(1.2);
+  filter: 
+  invert(50%) 
+  sepia(17%) 
+  saturate(5078%) 
+  hue-rotate(164deg) 
+  brightness(99%) 
+  contrast(101%);
+}
+
+#Youtube:hover {
+  transform: scale(1.2);
+  filter: invert(42%) 
+  sepia(91%) 
+  saturate(7364%) 
+  hue-rotate(353deg) 
+  brightness(102%) 
+  contrast(129%);
+}
+
+#Instagram:hover {
+  transform: scale(1.2);
+  filter: 
+  invert(44%) 
+  sepia(86%) 
+  saturate(1448%) 
+  hue-rotate(272deg) 
+  brightness(104%) 
+  contrast(106%);
+}
+
+
+
+
+
+/* Dividers */
+
+.divider {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 5rem 0 3rem 0;
+}
+
+.divider img {
+  height: 3rem;
+  margin: 0 2rem;
+}
+
+.divider span {
+  width: 100%;
+  height: 0.15rem;
+  background-color: #ffce00;
+}
+
+/* Vision/Projects */
+.vision {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.vision h2 {
+  margin-bottom: 20px;
+}
+
+.vision p {
+  color: #fff;
+  font-family: 'Ubuntu';
+  max-width: 900px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.projects-title {
+  font-family: 'Archivo Black';
+  text-transform: uppercase;
+  margin-top: 82px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  height: auto;
+  max-width: 100%;
+  padding: 0 48px 0 48px;
+  margin-top: 0;
+  margin-bottom: 32px
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  height: auto;
+}
+
+.project-image1,
+.project-image2,
+.project-image3 {
+  display: flex;
+  height: 36%;
+  min-height: 150px;
+  max-height: 80vh; /*Keeps images from getting too stretchy when zooming in*/
+  width: 100%;
+  border-radius: 16px;
+  border: 4px solid #ff10f0;
+  background-color: rgb(41, 36, 36);
+  box-shadow: -2px 8px 20px 12px black;
+}
+
+.project-image1 {
+  background-image: url('../Images/Projects/skilltreebanner1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.project-image2 {
+  background-image: url('../Images/Projects/chestIcon1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-color: black;
+}
+
+.project-image3 {
+  background-image: url('../Images/Projects/app1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.project-paragraph {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  padding-left: 4px;
+  width: 97%;
+}
+
+.project span {
+  align-self: center;
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: 1000;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Ubuntu';
+}
+
+.project p {
+  text-align: left;
+  color: #fff;
+  font-family: 'Ubuntu';
+}
+
+/* RoadMap */
+
+.roadmap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roadmap h2 {
+  margin: 1rem 0 5rem;
+}
+
+.roadmap-cards-container {
+  margin: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.roadmap-group {
+  width: 30%;
+  min-width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roadmap-group h3 {
+  margin: 1rem 0;
+}
+
+.roadmap-group p {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.roadmap-item {
+  background-color: #202020;
+  border: #6a6a6a 0.25rem solid;
+  box-shadow: rgb(17, 17, 17) 0 0.5rem 0.5rem;
+  border-radius: 1.55rem;
+  padding: 0.25rem 0.25rem;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+.item-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-header span {
+  display: flex;
+  align-items: center;
+}
+
+.item-header p {
+  color: #ffce00;
+  font-size: 1.1rem;
+  margin: 0 0 0 0.5rem;
+}
+
+.item-date {
+  position: relative;
+  color: #ffce00;
+  font-size: 0.75rem !important;
+  right: 0.5rem;
+  font-style: italic;
+}
+
+.item-header:hover {
+  cursor: pointer;
+}
+
+.item-icon {
+  width: 2.25rem;
+}
+.item-goal {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.item-description {
+  margin: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+/* Contribute */
+
+.contribute {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contribute a {
+  color: #4b57d2;
+}
+
+.contribute h2 {
+  margin-bottom: 5rem;
+}
+
+.contribute-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 2rem;
+  color: white;
+}
+
+.contribute-content {
+  position: relative;
+  display: flex;
+  margin: 0 0 5rem 0;
+}
+
+.contribute-image {
+  width: 15rem;
+  height: 10rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  border: 0.25rem solid #fa00ba;
+  margin: 0 1rem 0 0;
+}
+
+#contribute-image1 {
+  background-image: url(../Images/Projects/skilltreebanner1.png);
+}
+#contribute-image2 {
+  background-image: url(../Images/Projects/app1.png);
+}
+#contribute-image3 {
+  background-image: url(../Images/Projects/chestIcon1.png);
+  background-color: #000;
+}
+
+.contribute-text {
+  margin: 0 1rem 0 0;
+  width: 100%;
+}
+
+.contribute-text p {
+  margin: 1rem 0;
+}
+
+.contribute-content:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+/* SkillTree Lead Team */
+
+.skilltree-contributor {
+  position: relative;
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.skilltree-contributor h2 {
+  text-align: center;
+}
+
+.skilltree-contributor h2 span {
+  text-transform: uppercase;
+}
+
+/* Overseer*/
+.contributor-overseer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+}
+
+.contributor-overseer p b {
+  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
+  font-size: 1.25rem;
+  color: #ffce00;
+}
+
+.contributor-overseer .image,
+p {
+  margin: 0.25rem;
+}
+
+.contributor-overseer .image {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  border: purple 0.25rem solid;
+  overflow: hidden;
+}
+
+.contributor-overseer img {
+  position: relative;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
+/*  other people under onverseer*/
+.contributor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-group {
+  display: flex;
+}
+
+.contributor-card .image,
+p {
+  margin-top: 0.25rem;
+}
+
+.contributor-card p b {
+  font-family: 'Akira Expanded', 'Archivo Black', 'Ubuntu', sans-serif;
+  color: greenyellow;
+}
+
+.contributor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.contributor-card .image {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: purple 0.25rem solid;
+  overflow: hidden;
+}
+
+.contributor-card img {
+  position: relative;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  margin-top: 5rem;
+  background-color: #151515;
+}
+
+@media only screen and (max-width: 800px) {
+  /* RoadMap section */
+
+  .roadmap-group {
+    margin: 0 1rem 5rem 1rem;
+  }
+
+  /* Contribute section */
+  .contribute-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0 0 0;
+    max-width: 19rem;
+  }
+
+  .contribute-content *{
+    margin-right: 0;
+  }
+
+  .contribute-content h3 {
+    margin-bottom: 2rem;
+  }
+
+  .contribute-content:nth-child(2) {
+    flex-flow: column;
+  }
+
+  .contribute-image {
+    width: 19rem;
+    height: 20vh;
+  }
+
+  .contribute-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .contribute-text p {
+    text-align: justify;
+  }
+
+  .contribute-text p::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .header-logo-container p{
+    font-size: 1.5rem;
+  }
+  .header-logo-container img{
+    width: 15rem;
+  }
+
+  .header-subtitle-gy {
+    font-size: 2.25rem;
+  }
+
+  .header-subtitle-si {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  .header-subtitle-gy {
+    font-size: 1.5rem;
+  }
+
+  .header-subtitle-si {
+    font-size: 1.1rem;
+  }
+
+  .header-buttons button {
+    width: 45%;
+    font-size: .9rem;
+    font-weight: bold;
+  }
+  
+  .header-social-media ul li a img{
+    width: 1.75rem;
+  }
+}
