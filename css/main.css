@@ -543,6 +543,10 @@ header {
   width: 100%;
 }
 
+.contribute-text h3 {
+  margin: 0 0 1rem 0;
+}
+
 .contribute-text p {
   margin: 1rem 0;
 }
@@ -684,7 +688,8 @@ footer {
   }
 
   .contribute-content h3 {
-    margin-bottom: 2rem;
+    margin:0 0 2rem 0 ;
+    padding: 0;
   }
 
   .contribute-content:nth-child(2) {
