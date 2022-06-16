@@ -319,7 +319,7 @@ header {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
+  margin:2rem 1rem ;
   height: auto;
 }
 
@@ -372,9 +372,9 @@ header {
   margin-top: 32px;
   font-size: 24px;
   font-weight: 1000;
-  color: #fff;
+  color: #ffce00;
   text-transform: uppercase;
-  font-family: 'Ubuntu';
+  font-family: 'Akira Expanded','Ubuntu';
 }
 
 .project p {
